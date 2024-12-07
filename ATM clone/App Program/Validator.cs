@@ -8,30 +8,39 @@ using System.Threading.Tasks;
 
 namespace ATM_clone.App_Program
 {
-    internal class Validator
+    internal static class Validator
     {
-        public static bool AccountValidator (string accountPIN, string accountPassword, Dictionary <Account,User> Accouunts )
+        public static bool AccountValidator(string accountPIN, string accountPassword, Dictionary<Account, User> Accounts)
         {
-
-            
-            if (accountPIN == null) { return false; }
-            Account testAccount = new Account (accountPassword,accountPIN ) ;
-            Console.WriteLine();
-            foreach (var item in Accouunts)
+            // التحقق من أن المدخلات ليست فارغة أو null
+            if (string.IsNullOrEmpty(accountPIN) || string.IsNullOrEmpty(accountPassword))
             {
-                
-                if (item.Key.PIN == testAccount.PIN && item.Key.Password== testAccount.Password)
-                {
-                    return true;
-                }
-            }           
+                return false;
+            }
 
-            return false;
+            // is data type is true
+            if (!IsTypeMatch<int>(accountPIN, accountPassword))
+            {
+                return false ;
+            }
+
+            // chech if the account is created or no
+            return Accounts.Any(item => item.Key.PIN == accountPIN && item.Key.Password == accountPassword);
         }
-        // return owner of the account
-        public static User getUser(string accountPIN, string accountPassword)
+
+        public static bool IsTypeMatch<T>(this string input,string input2="",string input3="")
         {
-            return DB.data.FirstOrDefault(entry => entry.Key.PIN == accountPIN && entry.Key.Password == accountPassword).Value; 
+            try
+            {
+                T result = (T)Convert.ChangeType(input, typeof(T));
+                return true; 
+            }
+            catch
+            {
+                return false; 
+            }
         }
+
+
     }
 }

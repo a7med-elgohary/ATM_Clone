@@ -12,3 +12,4 @@ C:\Users\USERR\Desktop\ATM clone\ATM clone\obj\Debug\net9.0\refint\ATM clone.dll
 C:\Users\USERR\Desktop\ATM clone\ATM clone\obj\Debug\net9.0\ATM clone.pdb
 C:\Users\USERR\Desktop\ATM clone\ATM clone\obj\Debug\net9.0\ATM clone.genruntimeconfig.cache
 C:\Users\USERR\Desktop\ATM clone\ATM clone\obj\Debug\net9.0\ref\ATM clone.dll
+C:\Users\USERR\Desktop\ATM clone\ATM clone\obj\Debug\net9.0\ATM clone.sourcelink.json

@@ -9,7 +9,13 @@ namespace ATM_clone.App_Program
 {
     internal class DB
     {
-        public static Dictionary <Account,User> data = new Dictionary<Account,User >();
+        public static Dictionary<Account, User> data = new Dictionary<Account, User>()
+        {
+            
+        };
+     
         
+        
+       
     }
 }

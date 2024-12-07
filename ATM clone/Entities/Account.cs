@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATM_clone.App_Program;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace ATM_clone.Entities
 {
-    internal class Account
+    internal  class Account
     {
         public string Password { get; set; }
         public string PIN { get; set; }
-        protected uint Balance { get; set; }
+        public uint Balance { get; set; }
 
 
-        public Account(string password, string pin)
+        public  Account(string password, string pin)
         {
             Password = password;
             PIN = pin;
@@ -25,6 +26,7 @@ namespace ATM_clone.Entities
             PIN = pin;
             Balance = blance;
         }
-        
+
+       
     }
 }

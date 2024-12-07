@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATM clone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff8244750232a9a2de3b0e494e3685bc84367680")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATM clone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATM clone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

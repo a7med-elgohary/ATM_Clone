@@ -6,12 +6,12 @@ internal class Program
 {
     public static void addusers()
     {
-        Account ahmedaccount = new Account("111","123",123456789);
-        User newuser = new User("ahmed","elgohary",ahmedaccount);
-        
-        DB.data.Add(ahmedaccount,newuser);
+        User Adminuser = new VipUser("ahmed","elgohary","111", "123");
+        DB.data.Add(Adminuser.Account,Adminuser);
+        User normalUser = new normalUser("abod","elgohary","222","1234");
+        DB.data.Add(normalUser.Account, normalUser);
 
-        
+
     }
 
 
